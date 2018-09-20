@@ -27,7 +27,7 @@ app.post('/message', function(req,res) {
     res.sendFile('public/index.html', { root : __dirname});
 })
 
-app.listen(process.env.port || port, function() {
+app.listen(process.env.PORT || port, function() {
     console.log("Server is listening at 8080");
 })
 
