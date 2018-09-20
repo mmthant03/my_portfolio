@@ -1,9 +1,39 @@
 <!DOCTYPE html>
 <html>
-<title>Myo Min Thant</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+    <title>Myo Min Thant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 70px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+            
+        .fa:hover {
+            opacity: 0.7;
+        }
+            
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+    </style>
+</head>
 
 <body class="w3-content" style="max-width:1300px">
 
@@ -11,13 +41,14 @@
     <div class="w3-row">
         <div class="w3-half w3-black w3-container w3-center" style="height:700px">
             <div class="w3-padding-64">
-                <h1>My Logo</h1>
+                <h1>Welcome!</h1>
             </div>
             <div class="w3-padding-64">
                 <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
-                <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">My Work</a>
-                <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Resume</a>
-                <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
+                <a href="#project" class="w3-button w3-black w3-block w3-hover-light-grey w3-padding-16">My Projects</a>
+                <a href="#project" class="w3-button w3-black w3-block w3-hover-indigo w3-padding-16">Skills</a>
+                <a href="#contact" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Experience</a>
+                <a href="#contact" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">Contact</a>
             </div>
         </div>
         <div class="w3-half w3-blue-grey w3-container" style="height:700px">
@@ -40,12 +71,12 @@
 
     <!-- Second Grid: Work & Resume -->
     <div class="w3-row">
-        <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
+        <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="project">
             <div class="w3-padding-64" style="height:140px">
                 <h2>My Projects</h2>
             </div>
             <div class="w3-row">
-                <div style="height:209px; background-color: turquoise; margin: 2px">
+                <div style="height:209px; background-color: paleturquoise; margin: 2px">
                     <h3>Research Haven</h3>
                     <ul style="text-align : left">
                         <li>A web application to save research papers and share them on the webpage</li>
@@ -69,7 +100,7 @@
             </div>
 
             <div class="w3-row">
-                <div class"w3-silver" style="height:209px; background-color: turquoise; margin: 2px">
+                <div class"w3-silver" style="height:209px; background-color: paleturquoise; margin: 2px">
                     <h3>All the Beautiful Places on the Earth</h3>
                     <ul style="text-align : left">
                         <li>A simple CRUD web application for school project.</li>
@@ -135,7 +166,7 @@
                 <h1>Work Experience</h1>
             </div>
             <div class="w3-row">
-                <div style="height: 250px; background-color: silver; margin: 10px; padding: 20px">
+                <div style="height: 250px; background-color: silver; color: black; margin: 10px; padding: 20px">
                     <h3 style="padding:0%">Software Engineer Intern</h3>
                     <h4 style="padding:0%"><a href="https://bindez.com" target="_blank">Bindez</a> (Summer, 2018)</h4>
                     <ul style="text-align: left">
@@ -147,7 +178,7 @@
                 </div>
             </div>
             <div class="w3-row">
-                <div style="height: 250px; background-color: silver; margin: 10px; padding: 20px">
+                <div style="height: 250px; background-color: silver; color: black; margin: 10px; padding: 20px">
                     <h3 style="padding:0%">Content Specialist</h3>
                     <h4 style="padding:0%">Jovago (Summer, 2016)</h4>
                     <ul style="text-align: left">
@@ -161,7 +192,7 @@
         <div class="w3-half w3-teal w3-container" style="height:700px">
             <div class="w3-padding-64 w3-padding-large">
                 <h1>Contact</h1>
-                <p class="w3-opacity">GET IN TOUCH</p>
+                <p class="w3-opacity">Send an email to mmthant@wpi.edu or leave a message below.</p>
                 <form class="w3-container w3-card w3-padding-32 w3-white" action="/message" method="POST" target="_blank">
                     <div class="w3-section">
                         <label>Name</label>
@@ -177,13 +208,16 @@
                     </div>
                     <button type="submit" class="w3-button w3-teal w3-right">Send</button>
                 </form>
+                <a href="https://www.facebook.com/chanminaung" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/mmthant03" class="fa fa-linkedin" target="_blank"></a>
             </div>
+
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="w3-container w3-black w3-padding-16">
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <p>This webpage is implemented with NodeJs, Express, Html and CSS.</p>
     </footer>
 
 </body>
